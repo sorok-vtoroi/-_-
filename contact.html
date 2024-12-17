@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Связаться с нами</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <h1>📬 Свяжитесь с нами</h1>
+        <p>Заполните форму ниже для отправки рекламных предложений.</p>
+    </header>
+
+    <main>
+        <section class="contact-form">
+            <form action="send_email.php" method="POST">
+                <label for="name">Ваше имя:</label>
+                <input type="text" id="name" name="name" placeholder="Введите ваше имя" required>
+
+                <label for="email">Ваш email:</label>
+                <input type="email" id="email" name="email" placeholder="Введите ваш email" required>
+
+                <label for="message">Сообщение:</label>
+                <textarea id="message" name="message" rows="5" placeholder="Введите ваше сообщение" required></textarea>
+
+                <button type="submit">Отправить</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p><a href="index.html">На главную</a> | &copy; 2024 ScanToTextBot</p>
+    </footer>
+</body>
+</html>
